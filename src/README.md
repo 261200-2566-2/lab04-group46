@@ -9,9 +9,10 @@
 
 | **Stat** |     |
 |----------|-----|
-| ATK      | 10  |
+| ATK      | 15  |
 | HP       | 100 |
 | DEF     | 5 |
+| Speed     | 100 |
 
 
 ### *Tank*
@@ -19,9 +20,10 @@
 
 | **Stat** |     |
 |----------|-----|
-| ATK      | 5  |
+| ATK      | 10  |
 | HP       | 200 |
 | DEF     | 8 |
+| Speed     | 80 |
 
 - สร้าง `public int setHpTank()` เพื่อ set ค่าพลังชีวิตของตัวละครสาย Tank
 - สร้าง `public int setAttackTank()` เพื่อ set ค่าพลังชีวิตของตัวละครสาย Tank
@@ -32,8 +34,9 @@
 | **Stat** |     |
 |----------|-----|
 | ATK      | 20  |
-| HP       | 50 |
+| HP       | 60 |
 | DEF     | 0 |
+| Speed     | 120 |
 
 - สร้าง `public int setHpAssassin()` เพื่อ set ค่าพลังชีวิตของตัวละครสาย Assassin
 - สร้าง `public int setAttackAssassin()` เพื่อ set ค่าพลังชีวิตของตัวละครสาย Assassin
