@@ -11,7 +11,7 @@
 |----------|-----|
 | ATK      | 10  |
 | HP       | 100 |
-| MANA     | 100 |
+| DEF     | 5 |
 
 
 ### *Tank*
@@ -21,7 +21,7 @@
 |----------|-----|
 | ATK      | 5  |
 | HP       | 200 |
-| MANA     | 100 |
+| DEF     | 8 |
 
 - สร้าง `public int setHpTank()` เพื่อ set ค่าพลังชีวิตของตัวละครสาย Tank
 - สร้าง `public int setAttackTank()` เพื่อ set ค่าพลังชีวิตของตัวละครสาย Tank
@@ -33,7 +33,7 @@
 |----------|-----|
 | ATK      | 20  |
 | HP       | 50 |
-| MANA     | 100 |
+| DEF     | 0 |
 
 - สร้าง `public int setHpAssassin()` เพื่อ set ค่าพลังชีวิตของตัวละครสาย Assassin
 - สร้าง `public int setAttackAssassin()` เพื่อ set ค่าพลังชีวิตของตัวละครสาย Assassin
@@ -47,11 +47,11 @@
     - `private int bootsLevel;`
     - `private int defense;`
     - `private int attack;`
-    - `private int mana;`
+    - `private int hp;`
   - Operation
     - `int getDefense()`
     - `int getAttack()`
-    - `int getMana()`
+    - `int getHp()`
 
 มีของสวมใส่ 3 ชนิด
 ### *Gauntlet*
@@ -67,11 +67,11 @@
     }
 
 ### *Ring*
-+Mana
++defense
 
     public void ringLevelUp() {
         ringLevel++;
-        mana *=(1+0.05*level);
+        defense *=(1+0.05*level);
     }
     public int getRingLevel() {
         return ringLevel;
